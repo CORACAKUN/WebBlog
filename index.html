@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeBlog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="container">
+        <h1>WeBlog</h1>
+
+    </div>
+    <nav>
+
+      <div class="container">
+
+        <ul>
+          <li><a href="#add-post">Add Post</a></li>
+          <li><a href="#post-list">Posts</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+    <div id="notification-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2 id="modal-title">Notification</h2>
+            <p id="modal-message">Your message goes here.</p>
+            <button id="modal-button" class="modal-btn">OK</button>
+        </div>
+    </div>
+    
+
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h2>Are you sure you want to delete this post?</h2>
+            <button id="confirm-delete" class="modal-btn">Confirm</button>
+            <button id="cancel-delete" class="modal-btn">Cancel</button>
+        </div>
+    </div>
+
+  
+
+  <main>
+    <section id="add-post">
+      <h2>Add a New Post</h2>
+      <form id="add-post-form">
+        <label for="post-title">Title</label>
+        <input type="text" id="post-title" placeholder="Enter the title" required />
+        
+        <label for="post-body">Content</label>
+        <textarea id="post-body" placeholder="Write your post..." required></textarea>
+        
+        <button type="submit">Add Post</button>
+      </form>
+    </section>
+
+    <section id="post-list">
+      <h2>Posts</h2>
+      
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 My Blog | <a href="#about">About</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
