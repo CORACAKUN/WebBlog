@@ -7,12 +7,13 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #7c8fcf;
     line-height: 1.6;
+    
   }
   
   header {
-    background-color: #9900ff;
+    background-color: #901fdbd0;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -48,8 +49,9 @@
   
   main {
     padding: 20px;
-    margin: 100px 400px ;
-
+    margin: 110px 400px ;
+    background-color: rgba(143, 199, 148, 0.76);
+    border-radius: 14px;
   }
   
   section {
